@@ -20,7 +20,7 @@
   <!-- Nav Bar -->
   <nav class="navbar navbar-expand-lg navbar-light p-3 bg-dark" id="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand ps-4 fs-3 text-warning" href="#" id="piz">P i z z a H u t</a>
+      <a class="navbar-brand ps-4 fs-3 pe-0 text-warning" href="#" id="piz">P i z z a H u t</a>
       <button class="navbar-toggler" id="but" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -29,27 +29,29 @@
       <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-light ps-5 fs-5" aria-current="page" href="#">About Us</a>
+            <a class="nav-link active text-light ps-5 fs-5" aria-current="page" href="#a">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light ps-5 fs-5" href="#">Our Menu</a>
+            <a class="nav-link text-light ps-5 fs-5" href="#b">Our Menu</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-light ps-5 fs-5" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Our Team
+              Products
             </a>
             <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item text-light fs-5" href="#">Our Gallery</a></li>
-              <li><a class="dropdown-item text-light fs-5" href="#">Rewards</a></li>
+              <li><a class="dropdown-item fs-5" href="#d">Our Gallery</a></li>
+              <li><a class="dropdown-item fs-5" href="#f">Rewards</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item text-light ps-5 fs-5" href="#">Something else here</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled text-light ps-5 fs-5" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+            <a class="nav-link text-light ps-5 fs-5" href="#c">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light ps-5 fs-5" href="#g">Contact Us</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -101,11 +103,9 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
-
+  
   <!-- About us -->
-
-  <div class="row container-fluid pb-5 ">
+  <div class="row container-fluid pb-5" id="a">
     <div class="col-12 col-lg-6 pt-5" id="image">
       <img src="./pizza.jpg" />
     </div>
@@ -147,12 +147,13 @@
   </div>
 
   <!-- Our Menu -->
+  <h1 id="b"></h1>    
   <h1 class="text-center pt-5 pb-4" id="font">Our Menu</h1>
   <!-- 1st Line -->
   <div class="row container-fluid d-flex justify-content-center align-items-center gap-5" id="menu">
 
     <div class="col-md-4 col-lg-3 p-3 d-flex align-items-center flex-column shadow-lg" id="menu1">
-      <img src="./m4.jpg" />
+      <img src="./m4.jpg"/>
       <h2 class="pt-1">Chicken Pizza</h2>
       <h6 class="text-center text-danger">Chicken allows you the opportunity to play with a wide variety of topping
         combinations that blend well or contrast with it..</h6>
@@ -226,7 +227,7 @@
       <img src="./m8.webp" />
       <h2 class="pt-1">Pepperoni Pizza</h2>
       <h6 class="text-center text-danger">Pepperoni is essentially an American version of salami, something close to
-        what Italians might call salame piccante, a essentially generic term that means “spicy salami.”</h6>
+        what Italians might call  piccante, a essentially generic that means “spicy salami.”</h6>
       <h4>Offer Prize &#36; 40</h4>
       <button class="p-2 ps-4 pe-4 mt-1  border-0 text-white" id="menu2">Order Now!</button>
     </div>
@@ -244,6 +245,7 @@
 
 
   <!-- Our Team -->
+  <h1 id="c"></h1>
   <h1 class="text-center pt-5 pb-5" id="font">Our Team</h1>
 
   <div class="row container-fluid first-image pt-5" id="click">
@@ -320,6 +322,7 @@
   </div>
 
   <!-- Our Gallery -->
+  <h1 id="d"></h1>
   <h1 class="text-center pt-5 pb-4" id="font">Our Gallery</h1>
 
   <!-- 1st line gallery -->
@@ -364,9 +367,10 @@
   </div>
 
   <!-- Rewards -->
+  <h1 id="f"></h1>
   <h1 class="text-center pt-5 pb-5" id="font">Rewards</h1>
   <!-- 1st -->
-  <div class="row container-fluid p-4 ">
+  <div class="row container-fluid p-4">
     <div class="col pt-4 pe-3 col-12 col-lg-6">
       <h1 class="text-secondary">EARN FREE PIZZA
         EARN FREE FOOD EVERY TIME YOU ORDER</h1>
@@ -414,6 +418,7 @@
   </div>
 
   <!-- Contact Us -->
+  <h1 id="g"></h1>
   <h1 class="text-center" id="font">Contact Us</h1>
 
   <div class="row container-fluid ps-5 pe-5 d-flex flex-row" id="contact-us">
@@ -442,7 +447,7 @@
         <label class="pb-2">City</label>
         <input type="text" placeholder="Enter Your City" />
       </form>
-            <button class="pt-2  pb-2 mt-2 bg-warning border-0 p-2" id="button-button">Submit</button>
+            <button class="ps-4 pe-4 mt-4 text-white bg-danger  border-0 p-2" id="button-button">Submit</button>
 
     </div>
 
